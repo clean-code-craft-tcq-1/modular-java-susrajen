@@ -1,6 +1,5 @@
 package colorcoder;
 
-import org.junit.Test;
 
 import colortypes.MajorColor;
 import colortypes.MinorColor;
@@ -18,8 +17,7 @@ public class ColorCoderTest {
     static int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major.getIndexOfColor() *  MinorColor.values().length + minor.getIndexOfColor() + 1;
     }
-
-    @Test
+    
     public static void testNumberToPair(int pairNumber,
         MajorColor expectedMajor,
         MinorColor expectedMinor)
@@ -29,7 +27,7 @@ public class ColorCoderTest {
         assert(colorPair.getMajor() == expectedMajor);
         assert(colorPair.getMinor() == expectedMinor);
     }
-    @Test
+
     public static void testPairToNumber(
         MajorColor major,
         MinorColor minor,
