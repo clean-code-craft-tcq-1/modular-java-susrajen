@@ -16,5 +16,4 @@ public enum MajorColor implements Color {
 	public int getIndexOfColor() {
 		return index;
 	}
-	
 }
