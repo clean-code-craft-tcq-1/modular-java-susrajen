@@ -1,13 +1,10 @@
 package colorcoder;
 
-import org.junit.Test;
-
 import colortypes.MajorColor;
 import colortypes.MinorColor;
 
 public class ColorCoderTest {
- 
-	@Test
+
     public void testColorsForGivenPairNumber(int pairNumber,
         MajorColor expectedMajor,
         MinorColor expectedMinor)
@@ -17,7 +14,7 @@ public class ColorCoderTest {
         assert(colorPair.getMajor() == expectedMajor);
         assert(colorPair.getMinor() == expectedMinor);
     }
-    @Test
+
     public void testPairNumberForGivenColors(
         MajorColor major,
         MinorColor minor,
